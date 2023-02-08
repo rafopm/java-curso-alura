@@ -1,0 +1,15 @@
+package com.ejemplos;
+
+public class Ejemplo {
+	
+	public static void main(String[] args) {
+		System.out.println("Hola mundo");
+		
+		int edad = 5;
+		edad += 5;
+		
+		edad ++;
+		
+		System.out.println(edad);
+	}
+}
