@@ -3,7 +3,7 @@ package com.bytebank;
 public class TestReferencias {
 	public static void main(String[] args) {
 		Cliente Marcela = new Cliente();
-		Cuenta CuentaDeMarcela = new Cuenta();
+		Cuenta CuentaDeMarcela = new Cuenta(589,56);
 		Marcela.setNombre("Marcela");
 		
 		CuentaDeMarcela.setTitular(Marcela);

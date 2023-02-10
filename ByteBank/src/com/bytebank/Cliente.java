@@ -1,5 +1,4 @@
 package com.bytebank;
-
 public class Cliente {
 
     private String nombre;
@@ -12,17 +11,17 @@ public class Cliente {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public String getNumeroIdentidad () {
+    public String getNumeroIdentidad() {
         return numeroIdentidad;
     }
-    public void setNumeroIdentidad (String numeroIdentidad) {
-        this. numeroIdentidad = numeroIdentidad;
+    public void setNumeroIdentidad(String numeroIdentidad) {
+        this.numeroIdentidad = numeroIdentidad;
     }
-    public String getProfesion () {
+    public String getProfesion() {
         return profesion;
     }
-    public void setProfissao(String profesion) {
-        this. profesion = profesion;
+    public void setProfesion(String profesion) {
+        this.profesion = profesion;
     }
 
 }

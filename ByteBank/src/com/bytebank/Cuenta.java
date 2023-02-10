@@ -1,11 +1,20 @@
 package com.bytebank;
-
 public class Cuenta {
 
     private double saldo;
     private int agencia;
     private int numero;
     private Cliente titular;
+    private static int total = 0;
+
+    public Cuenta(int agencia, int numero){
+        Cuenta.total++;
+        System.out.println("Total de cuentas es " + Cuenta.total);
+        this.agencia = agencia;
+        this.numero = numero;
+        this.saldo = 100;
+        System.out.println("Estoy creando una cuenta" + this.numero);
+    }
 
     public void deposita(double valor) {
         this.saldo = this.saldo + valor;
@@ -38,6 +47,10 @@ public class Cuenta {
     }
 
     public void setNumero(int numero){
+        if(numero <= 0) {
+            System.out.println("No pueder ser el valor menor o igual a 0");
+            return;
+        }
         this.numero = numero;
     }
 
@@ -46,6 +59,10 @@ public class Cuenta {
     }
 
     public void setAgencia(int agencia){
+        if(agencia <= 0) {
+            System.out.println("No pueder ser el valor menor o igual a ");
+            return;
+        }
         this.agencia = agencia;
     }
 
@@ -57,4 +74,10 @@ public class Cuenta {
         return this.titular;
     }
 
+    public static int getTotal(){
+        return Cuenta.total;
+    }
+
 }
+
+
