@@ -3,7 +3,7 @@ package com.bytebank;
 public class TestFuncionario {
 
     public static void main(String[] args) {
-        Funcionario nico = new Funcionario();
+        Funcionario nico = new Gerente();
 
         nico.setNombre("Nico Steppat");
         nico.setDocumentoIdentidad("223355646-9");
