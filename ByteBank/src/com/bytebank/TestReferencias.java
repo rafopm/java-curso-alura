@@ -7,7 +7,12 @@ public class TestReferencias {
 		Marcela.setNombre("Marcela");
 		
 		CuentaDeMarcela.setTitular(Marcela);
-		CuentaDeMarcela.deposita(500);
+		try {
+			CuentaDeMarcela.deposita(500);
+		} catch (MiExcepcion e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		System.out.println(CuentaDeMarcela.getTitular().getNombre() + " - "+CuentaDeMarcela.getSaldo());
 		

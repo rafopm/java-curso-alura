@@ -16,7 +16,7 @@ public class Cuenta {
         System.out.println("Estoy creando una cuenta" + this.numero);
     }
 
-    public void deposita(double valor) {
+    public void deposita(double valor) throws MiExcepcion {
         this.saldo = this.saldo + valor;
     }
 
@@ -29,7 +29,7 @@ public class Cuenta {
         }
     }
 
-    public boolean transfiere(double valor, Cuenta destino) {
+    public boolean transfiere(double valor, Cuenta destino) throws MiExcepcion {
         if(this.saldo >= valor) {
             this.saldo -= valor;
             destino.deposita(valor);

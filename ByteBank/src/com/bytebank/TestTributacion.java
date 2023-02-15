@@ -4,7 +4,12 @@ public class TestTributacion {
 
     public static void main(String[] args) {
         CuentaCorriente cc = new CuentaCorriente(222, 333);
-        cc.deposita(100.0);
+        try {
+			cc.deposita(100.0);
+		} catch (MiExcepcion e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
         SeguroDeVida seguro = new SeguroDeVida();
 

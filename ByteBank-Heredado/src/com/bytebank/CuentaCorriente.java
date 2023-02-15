@@ -7,10 +7,10 @@ public class CuentaCorriente extends Cuenta {
 	}
 
 	@Override
-	public boolean saca(double valor) {
-		double ValorARetirar = valor + 0.2;
-		return super.saca(ValorARetirar);
-	}
+	public void sacar(double valor) throws SaldoInsuficienteException {
+        double valorASacar = valor + 0.2;
+        super.sacar(valorASacar);
+}
 
 	@Override
 	public void deposita(double valor) {

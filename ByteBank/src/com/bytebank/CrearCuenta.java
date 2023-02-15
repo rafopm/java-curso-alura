@@ -5,14 +5,29 @@ public class CrearCuenta {
 	public static void main(String[] args) {
 
 		Cuenta primeraCuenta = new Cuenta(555,124);
-		primeraCuenta.deposita(200);
+		try {
+			primeraCuenta.deposita(200);
+		} catch (MiExcepcion e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println(primeraCuenta.getSaldo());
 
-		primeraCuenta.deposita(100);
+		try {
+			primeraCuenta.deposita(100);
+		} catch (MiExcepcion e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println(primeraCuenta.getSaldo());
 
 		Cuenta segundaCuenta = primeraCuenta;
-		segundaCuenta.deposita(50);
+		try {
+			segundaCuenta.deposita(50);
+		} catch (MiExcepcion e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		System.out.println("primera cuenta tiene " + primeraCuenta.getSaldo());
 		System.out.println("segunda cuenta tiene " + segundaCuenta.getSaldo());
