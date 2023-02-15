@@ -3,10 +3,10 @@ package com.bytebank;
 public class TestCuentas {
 	public static void main(String[] args) {
 
-		CuentaCorriente cc = new CuentaCorriente(111, 111);
+		CuentaCorriente cc = new CuentaCorriente(-111, -111);
 		cc.deposita(100.0);
 
-		CuentaAhorros cp = new CuentaAhorros(222, 222);
+		CuentaAhorros cp = new CuentaAhorros(-222, -222);
 		cp.deposita(100.0);
 
 		try {
