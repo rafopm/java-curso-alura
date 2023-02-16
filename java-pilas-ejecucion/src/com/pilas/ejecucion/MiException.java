@@ -1,3 +1,5 @@
+package com.pilas.ejecucion;
+
 
 public class MiException extends Exception {
 
