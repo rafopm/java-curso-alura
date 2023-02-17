@@ -38,6 +38,6 @@ public class Clase16 {
             System.out.println(alumnoIterator.next());
         }
 
-        alumnoIterator.next();
+        //alumnoIterator.next();
     }
 }

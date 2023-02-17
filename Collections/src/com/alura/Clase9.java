@@ -41,11 +41,14 @@ public class Clase9 {
 
         System.out.println(suma);
 
-        //System.out.println(cursos);
+        System.out.println(cursos);
 
-        List<Curso> cursoList = cursos.stream().filter(curso -> !curso.getNombre().equalsIgnoreCase("Ruby")).sorted(Comparator.comparingInt(Curso::getTiempo)).collect(Collectors.toList());
+        //List<Curso> cursoList = cursos.stream().filter(curso -> !curso.getNombre().equalsIgnoreCase("Ruby")).sorted(Comparator.comparingInt(Curso::getTiempo)).collect(Collectors.toList());
 
         System.out.println(cursos.stream().filter(curso -> !curso.getNombre().equalsIgnoreCase("Historia")).mapToInt(Curso::getTiempo).sum());
+        System.out.println(cursos.stream().mapToInt(Curso::getTiempo).sum());
+        
+        System.out.println(cursos.stream().filter(curso -> !curso.getNombre().equalsIgnoreCase("Historia")));
 
     }
 }

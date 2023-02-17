@@ -31,8 +31,5 @@ public class Clase11 {
             System.out.println(alumno);
         }
 
-
-
-
     }
 }
